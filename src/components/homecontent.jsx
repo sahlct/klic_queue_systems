@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function HomeContent() {
   return (
-    <div className="mt-20 px-4 sm:px-8 md:px-16 grid grid-cols-1 md:grid-cols-2">
+    <div className="mt-20 px-4 sm:px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 font-parkinsans">
       {/* Left Side (Text Section) */}
       <div className="leftSide flex flex-col gap-5 justify-center pt-5 md:pt-24 order-1 md:order-none">
         <div className="flex gap-2 items-center">
-          <h1 className="flex items-center px-2 md:px-3 py-1 bg-[#f1f8c6] rounded-md">
+          <h1 className="flex items-center text-nowrap px-2 md:px-3 py-1 bg-orange-200 rounded-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -33,7 +33,7 @@ export default function HomeContent() {
         <div className="self-end md:py-5 flex flex-col gap-2">
           <p>Efficiency Technology for Superior Performance</p>
           <div className="flex flex-row gap-3">
-            <button className="w-2/3 bg-black rounded-md font-semibold text-start ps-5 text-2xl sm:text-3xl text-white pt-6 sm:pt-10 pb-2 sm:w-[70%]">
+            <button className="w-2/3 bg-black rounded-md font-semibold text-start ps-5 text-2xl sm:text-3xl text-white pt-5 sm:pt-10 pb-2 sm:w-[70%]">
               Order Now
             </button>
             <div className="w-1/3 sm:w-[30%] bg-black rounded-md flex justify-center items-center">
@@ -60,11 +60,14 @@ export default function HomeContent() {
       </div>
 
       {/* Right Side (Image Section) */}
-      <div className="rightSide h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center md:justify-end order-none md:order-1">
+      <div className="w-full relative flex justify-center min-h-[400px] items-center  gap-4 overflow-visible">
+        <div className="inverted-radius z-10 -rotate-45 md:h-[92%] h-[75%]">
+        </div>
         <img
-          src="https://s.alicdn.com/@sc04/kf/H80f8775b792c4cc3b1c543d0010efd10h.jpg"
-          alt="Queue System"
-          className="h-full w-full object-cover rounded-lg"
+          src="https://img.freepik.com/free-photo/composition-tablet-with-home-automation-app_23-2149036813.jpg?t=st=1733821245~exp=1733824845~hmac=1153af31072469c171c85816d53e325c235081d4aa3acbbdfc17c8ff558d213e&w=996"
+          alt="Remote"
+          className="rounded-lg absolute z-20 rotate-0 md:h-[450px] md:w-[400px] h-[300px] w-[250px] object-cover top-16 left-14"
+          style={{ borderRadius: '28% 72% 20% 80% / 44% 21% 79% 56% ' }}
         />
       </div>
     </div>

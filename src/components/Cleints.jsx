@@ -113,8 +113,8 @@ export default function Clients() {
     }, []);
 
     return (
-        <div ref={sectionRef} className="bg-gray-100 p-6 md:pb-20 pb-16 overflow-hidden">
-            <h2 className="text-center md:text-3xl text-2xl text-[#0a2140] font-semibold mb-10 mt-5 md:mt-10 md:mb-20">Served Industries </h2>
+        <div ref={sectionRef} className="bg-gray-100 font-parkinsans p-6 md:pb-20 pb-16 overflow-hidden">
+            <h2 className="text-center md:text-3xl text-2xl text-[#0a2140] font-light mb-10 mt-5 md:mt-10 md:mb-20">Served Industries </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 lg:px-28 px-0">
                 {clients.map((client, index) => (
                     <div
@@ -128,7 +128,7 @@ export default function Clients() {
                     >
                         <div className="text-4xl mb-4">{client.icon}</div>
                         <div className="h-px w-14 bg-gray-300 mb-4"></div>
-                        <h3 className="text-center font-medium">{client.title}</h3>
+                        <h3 className="text-center font-light">{client.title}</h3>
                     </div>
                 ))}
             </div>

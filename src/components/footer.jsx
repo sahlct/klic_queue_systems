@@ -3,10 +3,10 @@ import "./footer.css";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-[#0a2140] h-min flex flex-col items-center px-5 md:px-0">
+    <div className="w-full font-parkinsans bg-[#0a2140] h-min flex flex-col items-center px-5 md:px-0">
       <div className="py-8">
         <img
-          src="https://www.poshhiveinnovates.com/assets/img/logo/logo-2.png"
+          src="/assets/logo_white.svg"
           alt=""
           className="w-[110px] h-[30px] md:h-[50px] md:w-[150px]"
         />

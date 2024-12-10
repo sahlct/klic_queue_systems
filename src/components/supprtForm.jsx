@@ -59,13 +59,13 @@ export default function SupportForm() {
   return (
     <div className='w-full lg:px-36 md:px-10 px-5 mt-72 bg-[#0a2140] h-[450px] relative'>
       <div
-        className='md:w-3/4 w-[calc(100%-40px)] p-5 md:p-0 flex flex-col sm:flex-row h-auto sm:h-[450px] border-black bg-gray-100 shadow-2xl rounded-xl overflow-hidden absolute top-[-250px]'
+        className='md:w-3/4 w-[calc(100%-40px)] py-5 px-3 md:p-0 flex flex-col sm:flex-row h-auto sm:h-[450px] border-black bg-gray-100 shadow-2xl rounded-xl overflow-hidden absolute top-[-250px]'
         ref={formRef}
       >
         <div className='h-[200px] sm:h-full md:w-1/3'>
           <img src="https://down-my.img.susercontent.com/file/6ca17e1fa6b112c2585355bb6f03b36e" alt="" className='w-full h-full object-cover rounded-md sm:rounded-none'/>
         </div>
-        <div className='h-auto sm:h-full md:w-2/3 px-5 text-left flex flex-col justify-center py-5 sm:py-0'>
+        <div className='h-auto sm:h-full md:w-2/3 sm:px-5 px-0 text-left flex flex-col justify-center py-5 sm:py-0'>
           <h1 className='text-2xl font-bold'>Need Support</h1>
           <p>Contact professionals for guidance</p>
           <form action="" className='flex flex-col gap-3 mt-5'>

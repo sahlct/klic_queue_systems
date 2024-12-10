@@ -1,4 +1,9 @@
-import React from 'react';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// Register GSAP ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Customers() {
     // Customer data array
@@ -37,17 +42,49 @@ export default function Customers() {
         },
     ];
 
+    const gridRef = useRef(null);
+
+    useEffect(() => {
+        const elements = gsap.utils.toArray(".customer-item");
+
+        // Apply animation to each grid item
+        elements.forEach((element, index) => {
+            gsap.fromTo(
+                element,
+                { opacity: 0, y: 50 }, // Start: hidden and slightly below
+                {
+                    opacity: 1,
+                    y: 0, // End: visible and at the original position
+                    duration: 0.8,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: element,
+                        start: "top 80%", // Start animation when item is near viewport
+                        end: "top 50%", // Animation ends when item reaches the midpoint of the viewport
+                        scrub: true, // Smooth scrolling
+                    },
+                }
+            );
+        });
+    }, []);
+
     return (
-        <div className="flex flex-col gap-8 sm:gap-10 pb-10 sm:pb-14">
+        <div className="flex flex-col gap-8 sm:gap-10 pb-10 sm:pb-14 font-parkinsans">
             {/* Heading */}
-            <h1 className="text-center text-2xl sm:text-3xl font-semibold mt-6 sm:mt-10">
+            <h1 className="text-center text-2xl sm:text-3xl font-light mt-6 sm:mt-10">
                 Our Trusted Customers
             </h1>
 
             {/* Customer Grid */}
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-8 md:grid-cols-4 md:gap-14 px-4 sm:px-8 md:px-16">
+            <div
+                ref={gridRef}
+                className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-8 md:grid-cols-4 md:gap-14 px-4 sm:px-8 md:px-16"
+            >
                 {customers.map((customer, index) => (
-                    <div key={index} className="text-center bg-gray-white h-32 sm:h-40">
+                    <div
+                        key={index}
+                        className="customer-item text-center bg-gray-white h-32 sm:h-40"
+                    >
                         <img
                             src={customer.src}
                             alt={customer.name}

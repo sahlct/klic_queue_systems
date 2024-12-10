@@ -19,8 +19,8 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar for above `md` screens */}
-      <div className="hidden md:flex fixed top-0 z-50 h-20 w-full bg-gray-200 items-center px-10">
-        <div className="flex gap-8">
+      <div className="hidden md:flex fixed font-parkinsans top-0 z-50 h-20 w-full bg-[#0a2140] items-center px-10">
+        <div className="flex text-white gap-8">
           <button
             onClick={() => navigate("/home")}
             className={`hover:text-orange-500 ${
@@ -48,7 +48,7 @@ export default function Navbar() {
         </div>
         <div className="relative flex-1 flex justify-center">
           <img
-            src="https://www.poshhiveinnovates.com/assets/img/logo/LOGO.svg"
+            src="/assets/logo_white.svg"
             alt="logo"
             className="w-[100px] h-[100px] md:h-[150px] md:w-[150px]"
           />
@@ -73,7 +73,7 @@ export default function Navbar() {
             </svg>
           </div>
         </div>
-        <div className="flex gap-8">
+        <div className="flex text-white gap-8">
           <button
             onClick={() => navigate("/products")}
             className={`hover:text-orange-500 ${
