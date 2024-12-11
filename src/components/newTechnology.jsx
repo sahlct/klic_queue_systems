@@ -33,7 +33,7 @@ export default function NewTechnology() {
             {/* Absolute portion */}
             <div
                 ref={absoluteRef}
-                className="absolute opacity-[0.3] flex justify-center items-center bg-gray-400 h-60 w-20 rounded-full"
+                className="absolute md:opacity-[0.3] opacity-[0.1] flex justify-center items-center bg-gray-400 h-60 w-20 rounded-full"
             >
                 {/* <div className="bg-white h-44 w-44 rounded-full flex items-center justify-center">
                     <div className="bg-gray-300 h-28 w-20 rounded-full"></div>

@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function HomeContent() {
   return (
-    <div className="mt-20 px-4 sm:px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 font-parkinsans">
+    <div className="mt-20 px-4 sm:px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 font-parkinsans overflow-hidden">
       {/* Left Side (Text Section) */}
       <div className="leftSide flex flex-col gap-5 justify-center pt-5 md:pt-24 order-1 md:order-none">
         <div className="flex gap-2 items-center">
-          <h1 className="flex items-center text-nowrap px-2 md:px-3 py-1 bg-orange-200 rounded-md">
+          <h1 className="flex items-center text-nowrap px-1 md:px-3 py-1 bg-orange-200 rounded-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -22,9 +22,9 @@ export default function HomeContent() {
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" />
             </svg>
-            <span> Ver 2.0</span>
+            <span className='text-sm md:text-base'> Ver 2.0</span>
           </h1>
-          <p>New Standard In Queue Calling</p>
+          <p className='text-sm md:text-base'>New Standard In Queue Calling</p>
         </div>
         <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-start pe-5">
           Advanced Queue Calling System
