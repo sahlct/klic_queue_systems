@@ -36,7 +36,30 @@ export default function AboutText() {
     }, []);
 
     return (
-        <div className="p-6 md:p-16 font-parkinsans">
+        <div className="p-6 md:p-16 font-parkinsans relative">
+            {/* abosolute shape  */}
+            <div className="absolute hidden md:block right-5 opacity-[0.2] -top-8 rotate-12">
+                {/* <img src="/assets/01.png" className="h-full w-full" alt="abstract" /> */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="300" height="" viewBox="0 0 1589 1040" fill="none">
+                    <g filter="url(#filter0_b_14_6)">
+                        <path d="M1589 779.75L1589 331L1589 -3.3689e-05L486 0.000159166L4.92627e-05 281.75L6.6791e-05 382C9.57604e-05 547.686 134.315 682 300 682L523.25 682L923.595 682C1003.62 682 1068.5 746.876 1068.5 826.905C1068.5 944.594 1163.91 1040 1281.6 1040L1328.75 1040C1472.48 1040 1589 923.482 1589 779.75Z" fill="url(#paint0_linear_14_6)" fill-opacity="0.9" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_b_14_6" x="-25" y="-25" width="1639" height="1090" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="12.5" />
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_14_6" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_14_6" result="shape" />
+                        </filter>
+                        <linearGradient id="paint0_linear_14_6" x1="329.5" y1="100" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#15345D" />
+                            <stop offset="0.5" stop-color="#1F496D" />
+                            <stop offset="1" stop-color="#284E72" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+            </div>
             <div className="grid md:grid-cols-2 py-10 gap-5 items-center">
                 {/* Left Section - Image Grid */}
                 <div
