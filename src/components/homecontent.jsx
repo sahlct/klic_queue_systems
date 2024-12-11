@@ -60,13 +60,13 @@ export default function HomeContent() {
       </div>
 
       {/* Right Side (Image Section) */}
-      <div className="w-full relative flex justify-center min-h-[400px] items-center  gap-4 overflow-visible">
-        <div className="inverted-radius z-10 -rotate-45 md:h-[92%] h-[75%]">
+      <div className="w-full relative flex justify-center min-h-[360px] items-start md:items-center pt-16  gap-4 overflow-visible">
+        <div className="inverted-radius z-10 -rotate-45 md:h-[93%] h-[75%]">
         </div>
         <img
           src="https://img.freepik.com/free-photo/composition-tablet-with-home-automation-app_23-2149036813.jpg?t=st=1733821245~exp=1733824845~hmac=1153af31072469c171c85816d53e325c235081d4aa3acbbdfc17c8ff558d213e&w=996"
           alt="Remote"
-          className="rounded-lg absolute z-20 rotate-0 md:h-[450px] md:w-[400px] h-[300px] w-[250px] object-cover top-16 left-14"
+          className="rounded-lg absolute z-20 rotate-0 md:h-[450px] md:w-[400px] h-[270px] w-[250px] object-cover top-8 md:top-16 left-10 md:left-28"
           style={{ borderRadius: '28% 72% 20% 80% / 44% 21% 79% 56% ' }}
         />
       </div>
